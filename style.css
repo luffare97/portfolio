@@ -1,0 +1,51 @@
+body{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    background-color: brown;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: green;
+    width: 100%;
+    margin: 0%;
+}
+.profilePic{
+    width: 100px;
+    height: 100px;
+}
+.headerLi{
+    list-style: none;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    background-color: blueviolet;
+    display: grid;
+}
+.mainArticle{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: aquamarine;
+}
+.footerLinks{
+    list-style: none;
+}
+.footerContact{
+    list-style: none;
+}
+
