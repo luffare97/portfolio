@@ -15,7 +15,7 @@ nav{ background-color: #8367C7;
     height: 40px;
     z-index: 1;
 }
-.navUl{ color: #454ade;
+.navUl{ color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
@@ -40,14 +40,17 @@ nav{ background-color: #8367C7;
     transition: 0.45s;
     background-size: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 
 }
 .navLink:hover{
-    background-image: linear-gradient(#8367C7, #8367C7, #5603AD);
+    
+    scale: 105%;
+    background-color:#9b89ca ;
 
 }
 .navLink:active{
-    
+    color: #9b89ca ;
 }
 
 /*For all footer related things*/
@@ -63,6 +66,10 @@ footer{ background-color: #8367C7;
     grid-column: 1;
     list-style: none;
     text-align: right;
+    vertical-align: center;
+}
+.logos{
+    height: 30px;
 }
 .footerContact{
     grid-column: 3;
