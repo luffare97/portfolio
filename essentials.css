@@ -1,0 +1,48 @@
+/*For body on all pages*/
+body{   background-color: brown;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+/*For all header related things*/
+navbar{ background-color: green;
+    display: grid;
+    grid-template-columns: auto auto auto;   
+    grid-column: 1 / 4;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.profilePic{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin: auto 5%;
+}
+.navUl{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column: 3;
+}
+.navLi{
+    list-style: none;
+    border-left: 1px solid #bbb;
+}
+.navLink{
+    
+}
+
+/*For all footer related things*/
+footer{ background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column: 1 / 4 ;
+}
+.footerLinks{
+    list-style: none;
+}
+.footerContact{
+    list-style: none;
+}
