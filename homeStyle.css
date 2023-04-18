@@ -1,18 +1,4 @@
-header{
-    background-image: url(images/Hu-Tao.png);
-    height: 500px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-
 /*For all main related things*/
-main{
-    display: grid;
-    grid-template-columns: 10% auto auto 10%;
-    column-gap: 1%;
-    row-gap: 1%;
-}
 .articleContainer{
     display: grid;
     grid-template-columns: auto auto;
@@ -94,4 +80,3 @@ main{
 }
 
 
-/*animations for hover*/
