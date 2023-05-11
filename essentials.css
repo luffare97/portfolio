@@ -75,6 +75,7 @@ nav { background-color: #8367C7;
     
     scale: 105%;
     background-color:#9b89ca ;
+    border-radius: 10px;
 
 }
 .navLink:active {
@@ -101,7 +102,7 @@ footer { background-color: #8367C7;
     padding: 0%;
 }
 .logos {
-    height: 30px;
+    height: 35px;
     margin: auto;
 }
 .footerLi {
@@ -115,16 +116,38 @@ footer { background-color: #8367C7;
     list-style: none;
     padding: 0%;
 }
+.logos:hover {
+    scale: 110%;
+}
 
 /* For mobile */
 
 @media only screen and (max-width: 600px) {
     header{
-        height: 300px;
+        height: 200px;
+        margin: 0%;
+        background-position: center;
+    }
+    .navUl {
+        margin: auto auto;
     }
     .navLink {
-        font-size: 18px;
-        margin-top: 10%;
+        font-size: 15px;
+        padding-top: 10%;
+        height: 80%;
+    }
+    .navLink:hover{
+        scale: 110%;
+    }
+    footer {
+        grid-template-columns: auto;
+        margin-top: 2%;
+    }
+    .footerLinks {
+        grid-column: 1;
+    }
+    .footerContact {
+        grid-column: 1;
     }
     
 
