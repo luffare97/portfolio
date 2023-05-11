@@ -1,12 +1,12 @@
 /*For all main related things*/
-.articleContainer{
+.articleContainer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-column: 2 / 4;
 }
 /*For everything related to main articles*/
-.mainArticle{ background-color: #B3E9C7;
+.mainArticle { background-color: #B3E9C7;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1%;
@@ -22,20 +22,19 @@
 
 }
 
-.mainArticle:hover{
+.mainArticle:hover {
     transition-duration: 0.5s;
     scale: 102%;
-    box-shadow:10px 10px 10px black;
-    
+    box-shadow:10px 10px 10px black;    
 
 }
 
-.articleH1{ color: black;
+.articleH1 { color: black;
     grid-column: 1;
     grid-row: 1;
     margin: 10px;
 }
-.articleImg{
+.articleImg {
     height: 200px;
     width: 200px;
     grid-column: 1;
@@ -43,33 +42,33 @@
     border-radius: 15px;
     margin: 1%;
 }
-.articleP{ color: black;
+.articleP { color: black;
     grid-column: 2;
     grid-row: 2;
     margin: 2%;
 }
 /*For big Articles*/
-.bigMainArticle{
+.bigMainArticle {
     grid-template-columns: 20% 79%;
     padding: 1%;
     grid-column: 1/3;
     margin: 1%;
 }
 
-.bigArticleText{
+.bigArticleText {
     grid-column: 1;
     grid-row: 1/3;
     
 }
-.bigArticleH1{
+.bigArticleH1 {
     text-align: left;
     
 }
-.bigArticleP{
+.bigArticleP {
     grid-column: 1;
 
 }
-.bigArticleImg{
+.bigArticleImg {
     grid-column: 2;
     grid-row: 1/3;
     height: 100%;
@@ -79,4 +78,31 @@
     
 }
 
+/*For mobile*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .mainArticle {
+        grid-column: 1 / 2;
 
+    }
+    .articleH1 {
+        text-align: center;
+    }
+    .articleImg {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin: 12% auto 2% auto;
+        
+    }
+    .articleP {
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    
+    .bigMainArticle {
+        
+    }
+
+}
