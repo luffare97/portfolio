@@ -1,0 +1,66 @@
+.artContent {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   
+    grid-column: 2/3;
+    gap: 1%;
+}
+.artArticle {
+    margin: 1%;
+    display: grid;
+    background-image: url(images/beePlaceholder.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    box-shadow:10px 10px 10px black; 
+}
+.artHover {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.textBox {
+    display: grid;
+    grid-row: 3;
+    padding: 1%;
+    grid-template-rows: auto auto;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    position: relative;
+  
+}
+.artTitle {
+    margin: 0%;
+    grid-row: 2;
+    height: 10px;
+
+}
+.artText {
+    margin: 0%;
+    visibility: hidden;
+}
+
+/* HOVER THINGS */
+.artHover:hover {
+    background-color: lightgrey;
+    opacity: 50%;
+    transition-duration: 0.5s;
+    color: black;
+}
+@keyframes fadeIn {
+    0% {opacity: 0%; up: 100px;}
+    100% {opacity: 100%; down: 100px;}
+}
+.artHover:hover .artTitle {
+    transition-duration: 1s;
+    grid-row: 1;
+    padding-top: 0%;
+}
+.artHover:hover .artText {
+    transition-duration: 1s;
+    visibility: visible;
+    grid-row: 2 ;
+    padding-top: 0%;
+}
