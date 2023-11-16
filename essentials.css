@@ -1,3 +1,9 @@
+/*Colors
+    Nav and footer color: lavender #8367C7
+    Background: DarkPurple #5603AD
+    Nav hover and activate color: Light purple #9b89ca
+
+*/
 header {
     grid-column: 1 / 4;
     background-image: url(images/Hu-Tao.png);
@@ -20,7 +26,8 @@ header {
 }
 
 /*For body on all pages*/
-body {   background-color: #5603AD;
+body {   
+    background-color: #5603AD;
     display: grid;
     grid-template-rows: auto auto auto;
     padding: 0%;
@@ -43,7 +50,7 @@ nav { background-color: #8367C7;
     height: 40px;
     z-index: 1;
 }
-.navUl { color: white;
+.navUl {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
@@ -118,6 +125,41 @@ footer { background-color: #8367C7;
 }
 .logos:hover {
     scale: 110%;
+}
+
+/* In between (Tablets) */
+@media only screen and (max-width: 1100px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    header{
+        height: 300px;
+        margin: 0%;
+        background-position: center;
+    }
+    .navUl {
+        margin: auto auto;
+    }
+    .navLink {
+        font-size: 28px;
+        padding-top: 0%;
+        padding-bottom: 3%;
+        height: 80%;
+    }
+    .navLink:hover{
+        scale: 110%;
+    }
+    footer {
+        grid-template-columns: auto;
+        margin-top: 2%;
+    }
+    .footerLinks {
+        grid-column: 1;
+    }
+    .footerContact {
+        grid-column: 1;
+    }
+    
 }
 
 /* For mobile */
