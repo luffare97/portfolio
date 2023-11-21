@@ -1,14 +1,14 @@
 .artContent {
-    margin: 1%;
+    margin: 1% 5% 1% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;   
-    grid-column: 2/3;
+    grid-column: 1/4;
     gap: 1%;
 }
 .artArticle {
     margin: 5%;
     display: grid;
-    background-size: 100% auto;
+    background-size: 400px auto;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #9b89ca;
@@ -27,19 +27,22 @@
     display: grid;
     grid-row: 3;
     border-radius: 15px 15px  0px 0px;
-    gap: 6%;
     grid-template-rows: auto auto;
     position: relative;
+    color: black;
   
 }
 .artTitle {
-    margin: 1%;
     grid-row: 2;
     height: 10px;
+    background-color: #B3E9C7;
+    width: 50%;
+    height: 26px;
+    border-radius: 0px 15px 15px 0px;
+    padding-left: 2%;
 
 }
 .artText {
-    margin: 1%;
     visibility: hidden;
 }
 
@@ -56,13 +59,15 @@
 
 }
 .artHover:hover .artTitle {
-    transition-duration: 1s;
+
     grid-row: 1;
+    height: 0px;
 
 }
 .artHover:hover .artText {
     transition-duration: 1s;
     visibility: visible;
+    padding-left: 2%;
     grid-row: 2 ;
 
 }
@@ -71,7 +76,8 @@
 @media only screen and (max-width: 1100px) {
     .artContent {
         grid-template-columns: 1fr 1fr;   
-        margin-bottom: 10%;
+        margin-bottom: 1%;
+        gap: 0.1%;
     }
 }
 
@@ -80,7 +86,8 @@
     .artContent {
         grid-template-columns: 1fr;   
         gap: auto;
-        margin-bottom:30%;
+        margin-bottom:10%;
+        gap: 0.1%;
     }
 }
 
