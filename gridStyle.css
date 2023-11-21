@@ -118,7 +118,6 @@
 @media only screen and (max-width: 800px) {
     .mainArticle {
         grid-column: 1 / 2;
-
     }
     .articleH1 {
         text-align: center;

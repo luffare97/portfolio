@@ -26,7 +26,7 @@
 .textBox {
     display: grid;
     grid-row: 3;
-
+    border-radius: 15px 15px  0px 0px;
     gap: 6%;
     grid-template-rows: auto auto;
     position: relative;
@@ -45,7 +45,7 @@
 
 /* HOVER THINGS */
 .artHover:hover {
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 100%;
     transition-duration: 0.5s;
     color: black;
@@ -53,11 +53,7 @@
 .artHover:hover .textBox {
     transition-duration: 0.5s;
     background-color: #B3E9C7;
-}
-.artHover:hover .artArticle {
-    transition-duration: 0.5s;
-    scale: 150%;
-    box-shadow:10px 10px 10px black;   
+
 }
 .artHover:hover .artTitle {
     transition-duration: 1s;
@@ -70,6 +66,24 @@
     grid-row: 2 ;
 
 }
+
+/*For tablet*/
+@media only screen and (max-width: 1100px) {
+    .artContent {
+        grid-template-columns: 1fr 1fr;   
+        margin-bottom: 10%;
+    }
+}
+
+/*For phone*/
+@media only screen and (max-width: 800px) {
+    .artContent {
+        grid-template-columns: 1fr;   
+        gap: auto;
+        margin-bottom:30%;
+    }
+}
+
 
 /* For the Imgages */
 #orc {background-image: url(images/art/orc.png);}
