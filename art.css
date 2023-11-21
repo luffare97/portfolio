@@ -1,66 +1,83 @@
 .artContent {
-    margin-top: 1%;
+    margin: 1%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;   
     grid-column: 2/3;
     gap: 1%;
 }
 .artArticle {
-    margin: 1%;
+    margin: 5%;
     display: grid;
-    background-image: url(images/beePlaceholder.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 400px;
+    background-position: center;
+    background-color: #9b89ca;
+    width: auto;
     height: 400px;
     box-shadow:10px 10px 10px black; 
 }
 .artHover {
     display: grid;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     overflow: hidden;
+    
 }
 
 .textBox {
     display: grid;
     grid-row: 3;
-    padding: 1%;
+
+    gap: 6%;
     grid-template-rows: auto auto;
-    animation-name: fadeIn;
-    animation-duration: 5s;
     position: relative;
   
 }
 .artTitle {
-    margin: 0%;
+    margin: 1%;
     grid-row: 2;
     height: 10px;
 
 }
 .artText {
-    margin: 0%;
+    margin: 1%;
     visibility: hidden;
 }
 
 /* HOVER THINGS */
 .artHover:hover {
-    background-color: lightgrey;
-    opacity: 50%;
+    background-color: green;
+    opacity: 100%;
     transition-duration: 0.5s;
     color: black;
 }
-@keyframes fadeIn {
-    0% {opacity: 0%; up: 100px;}
-    100% {opacity: 100%; down: 100px;}
+.artHover:hover .textBox {
+    transition-duration: 0.5s;
+    background-color: #B3E9C7;
+}
+.artHover:hover .artArticle {
+    transition-duration: 0.5s;
+    scale: 150%;
+    box-shadow:10px 10px 10px black;   
 }
 .artHover:hover .artTitle {
     transition-duration: 1s;
     grid-row: 1;
-    padding-top: 0%;
+
 }
 .artHover:hover .artText {
     transition-duration: 1s;
     visibility: visible;
     grid-row: 2 ;
-    padding-top: 0%;
+
 }
+
+/* For the Imgages */
+#orc {background-image: url(images/art/orc.png);}
+#lovely {background-image: url(images/art/lovely.png);}
+#witch {background-image: url(images/art/witch.png);}
+#orcboy {background-image: url(images/art/Orc_Guy.png);}
+#gerblin {background-image: url(images/art/Gerblin.png);}
+#bimbo {background-image: url(images/art/BIMBO.png);}
+#scene {background-image: url(images/art/scene.jpg);}
+#bikermage {background-image: url(images/art/Bikermage.jpg);}
+#fungi {background-image: url(images/art/fungi.png);}
