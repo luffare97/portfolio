@@ -39,6 +39,8 @@ main {
     grid-template-columns: 5% auto 5%;
     column-gap: 1%;
     row-gap: 1%;
+    overflow: hidden;
+
 }
 
 /*For all NAV related things*/
