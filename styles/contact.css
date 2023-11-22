@@ -1,0 +1,24 @@
+.contactContainer {
+    background-color: green;
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contactForm {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns:1fr;
+    background-color: blue;
+}
+
+.formLable {
+    grid-column: 1;
+}
+.formInput {
+    grid-column: 2;
+}
+
+.contactInfo {
+
+}
