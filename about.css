@@ -7,14 +7,15 @@
 }
 
 aside {
-    display: grid;
+    /*display: grid;
+    grid-template-rows: auto auto;*/
     grid-column: 2;
     grid-row: 1/3;
     background-color: #8367C7;
     padding: 5% 5% 5% 5%;
     margin: 0%;
     border-radius: 15px 0px 0px 15px;
-    grid-template-rows: auto auto;
+    
 }
 
 .skillList {
@@ -65,7 +66,7 @@ ul {
 .cardDate {
     grid-column: 2;
     grid-row: 2;
-    color: gray;
+    color: white;
     text-align: right;
     font-weight:lighter;
     margin: 0%;
@@ -74,7 +75,7 @@ ul {
 .cardCompany {
     grid-column: 1;
     grid-row: 2;
-    color: gray;
+    color: white;
     font-weight:lighter;
     margin: 0%;
 

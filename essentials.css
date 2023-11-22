@@ -96,7 +96,8 @@ nav { background-color: #8367C7;
 }
 
 /*For all footer related things*/
-footer { background-color: #8367C7;
+footer { 
+    background-color: #8367C7;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / 4 ;
@@ -112,7 +113,7 @@ footer { background-color: #8367C7;
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     list-style: none;
     padding: 0%;
     transition-duration: 0.2s;
@@ -135,6 +136,10 @@ footer { background-color: #8367C7;
 }
 .logos:hover {
     scale: 110%;
+}
+#iconCredit {
+    color: black;
+    margin: 12% 0% 0% 1%;
 }
 
 /* In between (Tablets) */
@@ -168,6 +173,10 @@ footer { background-color: #8367C7;
         grid-column: 1;
     }
     .footerContact {
+        grid-column: 1;
+    }
+    #iconCredit {
+        grid-row: 1;
         grid-column: 1;
     }
     
@@ -205,6 +214,8 @@ footer { background-color: #8367C7;
     .footerContact {
         grid-column: 1;
     }
-    
+    #iconCredit {
+        padding-top: 2%;
+    }
 
 }
