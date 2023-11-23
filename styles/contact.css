@@ -1,5 +1,4 @@
 .contactContainer {
-    background-color: green;
     display: grid;
     grid-column: 2/3;
     grid-template-columns: 1fr 1fr;
@@ -8,13 +7,20 @@
 main {
     height: 100%;
 }
+.contactHeader {
+    color: orange;
+    grid-column: 1/3;
+}
 
 #contactForm {
     grid-column: 1;
     display: grid;
-    grid-template-columns:1fr;
-    gap: 10%;
-    background-color: blue;
+    grid-template-columns:20% 80%;
+    gap: 5%;
+    background-color: #B3E9C7;
+    align-items: center; 
+    padding: 5% 10%;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .formLable {
@@ -22,6 +28,15 @@ main {
 }
 .formInput {
     grid-column: 2;
+    height: 20px;
+}
+.radioContainer {
+    
+}
+
+#textBox {
+    height: 50px;
+    
 }
 
 .submitButton {
@@ -29,5 +44,8 @@ main {
 }
 
 .contactInfo {
-
+    background-color: #8367C7;
+    padding:  5% 10%;
+    display: grid;
+    border-radius: 0px 15px 15px 0px;
 }

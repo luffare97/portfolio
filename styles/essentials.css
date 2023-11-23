@@ -5,10 +5,13 @@
     Green card color: #B3E9C7
 
 */
+::-webkit-scrollbar {
+    display: none;
+}
 header {
     grid-column: 1 / 4;
     background-image: url(../images/art/Hu-Tao.png) ;
-    height: 500px;
+    height: 450px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     display: grid;
@@ -49,6 +52,7 @@ main {
 
 a {
     text-decoration: none;
+    color: #5603AD;
 }
 
 /*For all NAV related things*/
@@ -144,8 +148,17 @@ footer {
     transition-duration: 0.2s;
 }
 .logos:hover {
-    scale: 110%;
+    animation: wiggle;
+    animation-duration: 0.5s;
 }
+@keyframes wiggle {
+    0% {transform: rotate(20deg);}
+    33% { scale: 110%; transform: rotate(-20deg);}
+    66% { scale: 110%; transform: rotate(20deg);}
+    100% {scale: 100%; transform: rotate(0deg);}
+}
+
+
 #iconCredit {
     color: black;
     margin: 12% 0% 0% 1%;

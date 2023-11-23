@@ -6,7 +6,8 @@
     grid-column: 2 / 3;
 }
 /*For everything related to main articles*/
-.mainArticle { background-color: #B3E9C7;
+.mainArticle { 
+    background-color: #B3E9C7;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1%;
@@ -29,7 +30,8 @@
 
 }
 
-.articleH1 { color: black;
+.articleH1 { 
+    color: black;
     grid-column: 1;
     grid-row: 1;
     margin: 10px;
@@ -57,7 +59,8 @@
     border-radius: 15px;
     margin: 1%;
 }
-.articleP { color: black;
+.articleP { 
+    color: black;
     grid-column: 2;
     grid-row: 2;
     margin: 2%;
