@@ -1,43 +1,112 @@
 #projectContainer {
     
-    grid-column: 2;
-    padding: 1% 5%;
+    grid-column: 1/4;
+    padding: 2% 0%;
     display: grid;
-
+    grid-template-columns: 1fr 1fr;
     gap: 1%;
     
 }
 
 .projectHeader {
-    color: orange;
+    color: #B3E9C7;
+    margin: 0%;
     grid-column: 1/3;
 }
 
-.projectArticle {background-color: green;
-    grid-column: auto;
+.projectArticle {
+    background-color: #B3E9C7;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     gap: 2%;
-    padding: 1%;
+    padding: 5%;
+    border-radius: 15px;
+    max-width: 85%;
+    margin: auto;
 
 }
 
 .projectName {
-    color: blue;
     grid-row: 1;
     grid-column: 1/3;
+    margin: 0%;
+}
+
+.imageContainer {
+    grid-column: 1;
+    grid-row: 2/3;
+    display: grid;
+    gap: 1%;
 }
 
 .projectImage {
-    grid-column: 1;
-    height: 300px;
+    height: 200px;
     width: auto;
+    border-radius: 15px;
 }
 
 .projectText {
     grid-column: 2;
-    grid-row: 2/4;
     margin: 0%;
-    padding-right: 10%;
+
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #projectContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom:auto;
+        grid-column: 2;
+    }
+    .projectArticle {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        padding: 3%;
+        grid-column: 1;
+        
+    }
+    .imageContainer {
+        grid-row: 2;
+        grid-template-columns: 1fr 1fr;
+    }
+    .projectImage {
+        margin: auto;
+    }
+
+    .projectText {
+        grid-row: 3;
+        grid-column: 1;
+        margin-bottom: 10%;
+        padding: 0%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .img1 {
+
+        max-height: 200px;
+        height: auto;
+
+    }
+    .img2 {
+        display: none; 
+
+    }
+    .imageContainer {
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+
+    }
+    .projectText {
+        margin-bottom: 10%;
+    }
+    .projectArticle {
+        margin: auto;
+    }
+
 }

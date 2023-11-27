@@ -34,7 +34,7 @@ header {
 body {   
     background-color: #5603AD;
     padding: 0%;
-    margin: 0%;
+    margin: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -117,7 +117,6 @@ footer {
     padding: 0%;
     margin-top: auto;
     border-radius: 15px 15px 0 0 ;
-    z-index: 1;
     width: 100%;
     transition-duration: 0.2s;
 
@@ -189,7 +188,7 @@ footer {
     }
     footer {
         grid-template-columns: auto;
-        margin-top: 2%;
+        margin-top: auto;
     }
     .footerLinks {
         grid-column: 1;
@@ -228,7 +227,7 @@ footer {
     }
     footer {
         grid-template-columns: auto;
-        margin-top: 2%;
+        margin-top: auto;
     }
     .footerLinks {
         grid-column: 1;
