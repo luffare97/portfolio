@@ -1,0 +1,43 @@
+#projectContainer {
+    
+    grid-column: 2;
+    padding: 1% 5%;
+    display: grid;
+
+    gap: 1%;
+    
+}
+
+.projectHeader {
+    color: orange;
+    grid-column: 1/3;
+}
+
+.projectArticle {background-color: green;
+    grid-column: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 2%;
+    padding: 1%;
+
+}
+
+.projectName {
+    color: blue;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+.projectImage {
+    grid-column: 1;
+    height: 300px;
+    width: auto;
+}
+
+.projectText {
+    grid-column: 2;
+    grid-row: 2/4;
+    margin: 0%;
+    padding-right: 10%;
+}
