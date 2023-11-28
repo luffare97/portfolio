@@ -1,4 +1,12 @@
-/*For all main related things*/
+:root {
+    --darkPurple:#5603AD; /*Background*/
+    --lightPurple:#8367C7; /*Navbar and less important elements*/
+    --pink:#9b89ca; /*Hover on light purple*/
+    --lightGreen:#B3E9C7; /*Greena ccent color for more important things*/
+
+}
+
+/*For all home related things*/
 .articleContainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -7,7 +15,7 @@
 }
 /*For everything related to main articles*/
 .mainArticle { 
-    background-color: #B3E9C7;
+    background-color: var(--lightGreen);
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1%;

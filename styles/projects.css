@@ -1,3 +1,12 @@
+:root {
+    --darkPurple:#5603AD; /*Background*/
+    --lightPurple:#8367C7; /*Navbar and less important elements*/
+    --pink:#9b89ca; /*Hover on light purple*/
+    --lightGreen:#B3E9C7; /*Greena ccent color for more important things*/
+
+}
+
+
 #projectContainer {
     
     grid-column: 1/4;
@@ -9,13 +18,13 @@
 }
 
 .projectHeader {
-    color: #B3E9C7;
+    color: var(--lightGreen);
     margin: 0%;
     grid-column: 1/3;
 }
 
 .projectArticle {
-    background-color: #B3E9C7;
+    background-color: var(--lightGreen);
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -58,7 +67,7 @@
     #projectContainer {
         display: grid;
         grid-template-columns: 1fr;
-        margin-bottom:auto;
+        margin-bottom:10%;
         grid-column: 2;
     }
     .projectArticle {
@@ -86,6 +95,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #projectContainer {
+        margin-bottom: 100px;
+    }
+
     .img1 {
 
         max-height: 200px;
